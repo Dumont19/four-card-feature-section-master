@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --orange: hsl(34, 97%, 64%);
+    --cyan: hsl(180, 62%, 55%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dk-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --very-lg-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-poppins: 'Poppins', sans-serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-poppins);
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 400px;
+    padding: 0 1.5rem;
+}
+
+header {
+    text-align: center;
+}
+
+.title {
+    color: var(--very-dk-blue);
+    font-size: 1rem;
+    font-weight: 200;
+    padding-top: 5rem;
+}
+
+.title-strong {
+    color: var(--very-dk-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text {
+    color: var(--gray-blue);
+    font-size: .7rem;
+    margin-bottom: 3rem;
+}
+
+.cards {
+    padding-bottom: 3rem;
+}
+
+.card {
+    padding: 1rem 1rem 2.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0px 20px 15px hsl(215, 23%, 50%, .2),
+                0px 5px 5px hsl(215, 23%, 50%, .1);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    transform: 1s ease-in-out;
+}
+
+.card h4 {
+    color: var(--very-dk-blue);
+    font-size: .85rem;
+    margin-bottom: .5rem;
+}
+
+.card p {
+    color: var(--gray-blue);
+    font-size: .7rem;
+}
+
+.card.green {
+    position: relative;
+    border-top: 4px solid var(--cyan)
+}
+
+.card.green img {
+    width: 19%;
+    position: relative;
+    left: 10rem;
+    top: 1.6rem;
+}
+
+.card.red {
+    position: relative;
+    border-top: 4px solid var(--red)
+}
+
+.card.red img {
+    width: 19%;
+    position: relative;
+    left: 10rem;
+    top: 1.6rem;
+}
+
+.card.yellow {
+    position: relative;
+    border-top: 4px solid var(--orange)
+}
+
+.card.yellow img {
+    width: 19%;
+    position: relative;
+    left: 10rem;
+    top: 1.6rem;
+}
+
+.card.blue {
+    position: relative;
+    border-top: 4px solid var(--blue)
+}
+
+.card.blue img {
+    width: 19%;
+    position: relative;
+    left: 10rem;
+    top: 1.6rem;
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        overflow: hidden;
+        padding: 0 2rem;
+    }
+
+    .container {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    header .title,
+    header .title-strong {
+        font-size: 2rem;
+    }
+
+    header .text {
+        font-size: .8rem;
+        padding: 0 30rem;
+    }
+
+    .cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
+    }
+
+    .card {
+        position: absolute;
+        width: 19em;
+        padding: 1rem 2rem 2.5rem 2rem;
+    }
+
+    .card h4 {
+        font-size: 1rem;
+    }
+
+    .card.red img {
+        width: 23%;
+    }
+
+    .card.card.yellow {
+        top: 13.3rem;
+        right: 19.5rem;
+    }
+
+    .card.yellow img {
+        width: 23%;
+    }
+
+    .card.card.green {
+        top: 7.5rem;
+    }
+
+    .card.green img {
+        width: 23%;
+    }
+
+    .card.card.blue {
+        left: 39.3rem;
+        bottom: 8rem;
+    }
+
+    .card.blue img {
+        width: 23%;
+    }
+
+}
+
+
+
+
+
+
+
+
